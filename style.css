@@ -1,0 +1,567 @@
+body {
+    margin: 0;
+    color: #f3f3f3;
+    text-align: center;
+    background: rgba(39, 40, 51, 1);
+    font-family: "Segoe UI";
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #3da15b;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  
+  hr {
+    background-color: #96e267;
+    border: 2px solid green;
+    width: 100%;
+    margin: 10px auto;
+  }
+  
+  /* nav */
+  .nav {
+    width: 100vw;
+    z-index: 99;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    color: #e3dbc4;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: rgba(39, 40, 51, 1); ;
+  }
+  .navItem {
+    margin-right: 20px;
+    background-color: rgb(255, 240, 220);
+    border-radius: 50px;
+    padding: 5px 10px 6px;
+    font-weight: 600;
+  }
+  .navItem:last-child {
+    margin-right: 50px;
+  }  
+  .navItem:hover{
+    transform: scale(1.1);
+  }
+  
+  /* intro */
+  .semiTransparent {
+    background-image: url(./images/picture1.jpg);
+    background-size: cover;
+    background-position: 0;
+    margin-top: 50px;
+  }
+  .intro {
+    background: rgba(255, 240, 220, 0.4);
+    height: 60vh;
+    min-height: 420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    line-height: 20px;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    padding: 20px 0;
+    box-shadow: 10px 10px 10px rgba(51, 74, 12, 0.3);
+
+  }
+  .laptopHeader, .subtitle, .mobileHeader{
+    font-family: 'Ysabeau SC';
+    font-weight: 500;
+    color: #1c8e5b;
+  }
+  .laptopHeader{
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: -1px;
+
+  }
+  .mobileHeader{
+    display:none;
+  }
+  .subtitle {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  .quote {
+    color: rgb(255, 248, 238);
+    padding: 10px 100px 10px 20px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #91b778 80%, transparent);
+  }
+.contactsIntro {
+  background:linear-gradient(to right, rgba(248, 249, 222, 0.6) 80%, transparent);
+  width: 80%;
+  padding: 10px 20px;
+    line-height: 30px;
+    margin-top: 20px;
+    color: rgb(67, 125, 67);
+    font-family: 'Ysabeau SC';
+    font-weight: 400;
+    border-radius: 20px;
+    
+  }
+  i.posMargin{
+    padding-right: 10px;
+  }
+  .phone a, .email a{
+    font-weight: 600;
+    color: rgb(60, 110, 60);
+  }
+  
+  p.phone a:hover, p.email a:hover{
+    color: rgb(44, 78, 44);
+  }
+.left {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0 50% 50% 0;
+    height: 100%;
+    background-size: cover;
+    background-image: url("./images/flower.jpg");
+    flex-basis: 30%;
+    position: relative;
+  }
+.portrait {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+    height: 15vw;
+    width: 15vw;
+    background-image: url("./images/portrait.jpg");
+    background-position: 0;
+    border-radius: 100%;
+    background-size: cover;
+    border: 2px dotted rgb(234, 255, 225);
+  }
+  .right {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  /* ---------------------------------------about me-------------------------------------------- */
+  .aboutMe {
+    box-shadow: inset 0px 20px 20px -10px rgba(51, 74, 12, 0.3);
+    position: relative;
+    padding: 80px 0;
+    background-color:#ffeec8;
+    color: #166f47;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Segoe UI";
+  }
+  .aboutMeText {
+    margin: 0 80px;
+    background-color:rgb(255, 238, 200);
+    flex-basis: 50%;
+    text-align: left;
+  }
+  .aboutMeText h2 {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #91b778;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 400;
+    color: #fff8ee; 
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .aboutMeText p {
+    font-weight: 600;
+    line-height: 25px;
+  }
+.greens {
+  background-image: url('./images/flowerhead.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-basis: 50%;
+  box-shadow: 0 0 20px 10px rgba(51, 74, 12, 0.1);
+  border-radius: 200px 0 0 200px;
+}
+/* ---------------------------------------about me-------------------------------------------- */
+.aboutMe {
+  padding: 50px 0;
+  position: relative;
+  background-color:rgb(255, 238, 200);
+  color: #3da15b;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutMeText {
+  margin: 0 20px;
+  background-color:rgb(255, 238, 200);
+  flex-basis: 50%;
+  text-align: left;
+  z-index: 80;
+}
+.aboutMe p{
+  font-weight: 600;
+}
+.greens {
+  background-image: url('./images/flowerhead.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  flex-basis: 50%;
+  border-radius: 200px 0 0 200px;
+  z-index: 80;
+}
+.aboutMeText p {
+  line-height: 25px;
+}
+.aboutMeText h2 {
+  margin-bottom: 25px;
+}
+/* what i can help with */
+.semiTransparent2{
+  background:rgba(255, 197, 122, 0.4);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Ysabeau SC';
+}
+.blue-bg {
+  background-image: url("./images/picture2.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+.help-header{
+  background-color:#91b778;
+  color: rgb(255, 248, 238);
+  padding: 20px 0;
+  font-size: 20px;
+  box-shadow: 0px 10px 10px rgba(51, 74, 12, 0.3);
+}
+.curtainText {
+  height: auto;
+  padding: 20px;
+  text-align: left;
+  display: inline-block;
+  border-radius: 5px;
+  width: 80vw;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: top;
+  padding-left: 0;
+}
+li {
+  flex-basis: 45%;
+  
+  list-style: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 600;
+}
+.bolder{
+  font-weight: 600;
+  background-color: #bfd885;
+  color: #2c6f47;
+  padding: 5px 10px;
+  border-radius: 10px 10px 0 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.inline{
+  font-size: 14px;
+  color: #2c6f47;
+  /* margin-left: 50px; */
+  background-color: rgb(255, 240, 220);
+  padding: 10px 30px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 10px 10px 10px rgba(51, 74, 12, 0.2);
+}
+.curtainText h3 {
+  color: #f7f1e2;
+}
+
+/*------------------------ workwithme---------------- */
+.workWithMe{
+  position: relative;
+  display: flex;
+  justify-content: end;
+   color: #2c6f47;
+  }
+  .imageContainer{
+    background-image: url("./images/mentalhealth.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .textContainer{
+  background-color:#91b778;
+  padding:20px 40px;
+  text-align: left;
+}
+.textContainer h3{
+  padding-bottom: 5px;
+  border-radius: 20px;
+ font-size: 20px;
+ color: rgb(255, 248, 238);
+ text-align: center;
+ box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+ 
+}
+.textContainer p{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  background-color: #bfd885;
+  padding: 10px 20px;
+  color: #2c6f47;
+  font-weight: 600;
+  border-radius: 20px;
+  margin: 5px 0;
+}
+.textContainer strong{
+  color: #367c52;
+  font-size: 15px;
+}
+.workWithMe div{
+  flex-basis: 50%;
+}
+/* ---------------------------------------FOOTER-------------------------------------------- */
+.footer a{
+  text-decoration: none;
+  color:#91b778; 
+}
+.footer i {
+  font-size: 1.5rem;
+}
+.footer {
+  height: 50px;
+  padding: 10px;
+  z-index: 80;
+}
+.footerText {
+  display: inline-block;
+  width: 15%;
+}
+.footer h2 {
+  font-weight: 400;
+  color: #2e8075;
+  letter-spacing: 5px;
+}
+.footer p {
+  font-size: 0.8rem;
+  margin: 20px;
+}
+.contact-info:hover{
+  transform: scale(1.1);
+}
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.neg-margin {
+  margin-right: -30px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+}
+
+/* CSS for mobile devices */
+@media (max-width: 919px) {
+  .navItem:last-child{
+    margin-right: 10px;
+  }
+  hr{
+    margin: 5px auto 0;
+    border: solid 1px rgb(184, 222, 117);
+  }
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 0 0 10px 0;
+  }
+  .left {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+    background-position: center;
+    width: 100vw;
+    flex-basis: 100%;
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+  .portrait {
+    position: relative;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    right: initial;
+    top: 10px;
+    transform: none;
+  }
+  .laptopHeader{
+    display: none;
+  }
+  .mobileHeader{
+    margin: auto;
+    line-height: 30px;
+    font-size: 20px;
+    display:block;
+  }
+  .mobileHeaderSpec{
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .subtitle{
+    margin: 10px auto 20px;
+    
+    font-size: 20px;
+  }
+  .right {
+    flex-basis: 100%;
+    padding: 0 10px;
+  }
+  .quote{
+    margin-top: -10px;
+    background: #91b778;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .contactsIntro {
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: rgba(248, 249, 222, 0.6);
+  }
+  .contactsIntro p {
+    line-height: 20px;
+    font-size: 13px;
+    color: #1c8e5b;
+  }
+  /* about me */
+    .aboutMe {
+      padding: 20px 0;
+      flex-wrap: wrap;
+      background-color: #fbf7d2;
+    }
+    .aboutMeText {
+      background-color: transparent;
+      margin: 20px;
+      flex-basis: 100%;
+      padding: 0 10vw;
+      z-index: 14;
+      margin-top: -20px;
+    }
+    .aboutMeText p {
+      opacity: 0.7;
+    }
+    .aboutMeText h2{
+      border-radius: 10px;
+      text-align: center;
+      background-color: #91b778;
+      color: rgb(255, 248, 238);
+      font-size: 25px;
+    }
+    .greens {
+      box-shadow: none;
+      background-size: contain;
+      height: 250px;
+      margin: auto;
+      background-position: center;
+      border-radius: 200px;
+      z-index: 10;
+      order: -1;
+    }
+    /* how i can help */
+    ul{
+      display: block;
+    }
+    /* work with me */
+   .workWithMe{
+    padding-top: 10px;
+    display: block;
+    background-color:#91b778;
+   } 
+   .imageContainer{
+    width: 96%;
+    margin: auto;
+    border-radius: 400px;
+    height: 150px;
+    background-size: cover;
+   }
+   .textContainer{
+    padding:0 40px 20px;
+  }
+  /* footer */
+  .footer{
+    padding-bottom: 20px;
+  }
+  .footer h2{
+    margin-bottom: 10px;
+  }
+  .contacts {
+    flex-wrap: wrap;
+  }
+  .footer p {
+    margin: 10px 20px;
+  }
+}
+/* CSS for tablet devices */
+@media (min-width: 920px) and (max-width: 1300px) {
+  .intro {
+    flex-direction: row;
+    align-items: center;
+    min-height: 500px;
+  }
+  .laptopHeader{
+    font-size: 30px;
+  }
+  .portrait {
+    height: 200px;
+    width: 200px;
+    right: -20px;
+    transform: translateY(-50%);
+  }
+  .right {
+    flex-basis: 65%;
+    padding: 200px 0;
+  }
+  .contactsIntro{ 
+  width: 80%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background:linear-gradient(to right, rgba(248, 249, 222, 0.6) 80%, transparent);
+}
+}
